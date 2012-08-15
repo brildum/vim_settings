@@ -28,7 +28,7 @@ set smarttab                    " insert tabs on the start of a line according t
                                 "    shiftwidth, not tabstop
 set scrolloff=4                 " keep 4 lines off the edges of the screen when scrolling
 " set virtualedit=all             " allow the cursor to go in to "invalid" places
-set hlsearch                    " highlight search terms
+" set hlsearch                    " highlight search terms
 set incsearch                   " show search matches as you type
 set gdefault                    " search/replace "globally" (on a line) by default
 
@@ -93,5 +93,10 @@ set nomodeline                  " disable mode lines (security measure)
 "set ttyfast                     " always use a fast terminal
 " set cursorline                  " underline the current line, for quick orientation
 
-map <leader>n :NERDTreeTabsToggle<CR>
+" Plugin settings
+let NERDTreeQuitOnOpen=1
 
+" Key mappings
+map <leader>b :BufExplorer<CR>
+map <leader>f :FufFile **/<CR>
+map <leader>d :NERDTreeToggle<CR>

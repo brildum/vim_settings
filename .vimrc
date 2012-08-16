@@ -99,4 +99,5 @@ let NERDTreeQuitOnOpen=1
 " Key mappings
 map <leader>b :BufExplorer<CR>
 map <leader>f :FufFile **/<CR>
+map <leader>F :FufRenewCache<CR>
 map <leader>d :NERDTreeToggle<CR>

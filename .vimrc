@@ -92,6 +92,10 @@ set showcmd                     " show (partial) command in the last line of the
 set nomodeline                  " disable mode lines (security measure)
 "set ttyfast                     " always use a fast terminal
 " set cursorline                  " underline the current line, for quick orientation
+"
+" VIM by default has *.as files mapped to Atlas, but we want ActionScript
+au BufNewFile,BufRead *.as      set filetype=actionscript
+au BufNewFile,BufRead *.mxml    set filetype=xml
 
 " Plugin settings
 let NERDTreeQuitOnOpen=1
